@@ -6,7 +6,7 @@
   font-style: normal;
 }
 div {
-    border: 2px solid;
+    /* border: 2px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,10 +90,10 @@ span{
     column-gap: 20px;
     align-items: center;
 }
-.foot{
+/* .foot{
     position:relative;
-    top:40px;
-}
+    bottom:4px;
+} */
 @media screen and (max-width:640px){
     input{
     height: 20px;
@@ -111,5 +111,8 @@ span{
     }
     .tit>h1{
         font-size: 20px;
+    }
+    .foot{
+        font-size: 12px;
     }
 }
