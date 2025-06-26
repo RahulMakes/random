@@ -6,11 +6,12 @@
   font-style: normal;
 }
 div {
-    /* border: 2px solid; */
+    border: 2px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 body {
@@ -18,13 +19,15 @@ body {
     margin: 0;
     padding: 0;
     /* color: white; */
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
 .cont {
     height: 100vh;
     row-gap: 30px;
+    padding: 10px;
+    overflow: auto;
 }
 
 .tit {
@@ -32,7 +35,7 @@ body {
 }
 
 .inp {
-    height: 30vh;
+    height: 40vh;
     row-gap: 30px;
     padding: 0;
     margin: 0;
@@ -90,4 +93,23 @@ span{
 .foot{
     position:relative;
     top:40px;
+}
+@media screen and (max-width:640px){
+    input{
+    height: 20px;
+    width: 50px;
+    font-size: 13px;
+    padding: 5px;
+    }
+    button {
+    margin: 0;
+    height: 35px;
+    /* width: 50px; */
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px 5px;
+    }
+    .tit>h1{
+        font-size: 20px;
+    }
 }
